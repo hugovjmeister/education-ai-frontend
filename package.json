@@ -8,9 +8,13 @@
     "build": "react-scripts build"
   },
   "dependencies": {
+    "@xyflow/react": "^12.3.6",
+    "axios": "^1.7.9",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "^3.0.1"
+    "react-scripts": "^5.0.1",
+    "reactflow": "^11.11.4",
+    "webpack": "^5.97.1"
   },
   "author": "Hugo Fernandez",
   "license": "ISC",
@@ -25,5 +29,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.26.3",
+    "babel-loader": "^9.2.1",
+    "css-loader": "^7.1.2",
+    "style-loader": "^4.0.0"
   }
 }

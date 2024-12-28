@@ -13,7 +13,13 @@ RUN npm install
 ENV NODE_OPTIONS=--openssl-legacy-provider
 
 # Copiar el resto de la aplicación
+COPY requirements.txt .
+
+RUN pip install --no-cache-dir -r requirements.txt
+
 COPY . .
+
+CMD ["python", "db/create_database.py"]
 
 # Construir el proyecto
 RUN npm run build
